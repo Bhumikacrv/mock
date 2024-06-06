@@ -6,6 +6,16 @@
     <title>Bootstrap demo</title>
    <link rel="stylesheet" href="style.css">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <style>
+    .lists .drop-down{
+        display: none;
+        
+    }
+    .lists:hover .drop-down{
+        display: block;
+    }
+    
+   </style>
      </head>
   <body>
     <nav>
@@ -15,10 +25,16 @@
                     <img src="image/logo-design-49570.png" alt="" width="100px">
                 </div>
                 <div class="col-lg-6 nav-link">
-                    <a href="#">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#service">Services</a>
-                    <a href="#contact">Contact Us</a>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li class="lists"><a href="#service">Services</a>
+                    <div class="drop-down">
+                        <div style="display: flex; flex-direction:column">
+                            <a href="">s</a>
+                        <a href="">f</a>
+                        </div>
+                    </div></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </div>
                 <div class="col-lg-3 menu">
                     <img src="image/12144329-removebg-preview.png" alt="" width="30px">
@@ -28,12 +44,9 @@
     </nav>
     <section>
         <div class="container">
-            <div class="landing" data-aos="zoom-out" data-aos-duration="3000"></div>
-            <div class="pos"><h1 data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500">Welcome to Interiors Company pvt, where we transform spaces into extraordinary environments.</h1>
-            <button data-aos="fade-up"
-            data-aos-duration="3000"><a href="#about" >Know More</a></button></div>
+            <div class="landing"></div>
+            <div class="pos"><h1 >Welcome to Interiors Company pvt, where we transform spaces into extraordinary environments.</h1>
+            <button ><a href="#about" >Know More</a></button></div>
 
         </div>
     </section>
@@ -41,10 +54,10 @@
     <section >
         <div class="container" >
             <div class="row content" >
-                <div class="col-lg-6"  data-aos="fade-right" data-aos-duration="3000">
+                <div class="col-lg-6">
                     <img src="image/l1.jpg" alt="">
                 </div>
-                <div class="col-lg-6 para"  data-aos="fade-left" data-aos-duration="3000">
+                <div class="col-lg-6 para">
                     <h1>About Us</h1>
                     <p>Welcome to Interiors Company pvt, where we transform spaces into extraordinary environments. As a premier interior design firm, we specialize in residential, commercial, and hospitality design, offering tailored solutions that reflect our clients' unique tastes and needs. Our team of talented designers and architects is dedicated to delivering innovative, sustainable, and functional designs that enhance everyday living and working experiences. With a keen eye for detail and a commitment to excellence, we bring your vision to life, creating spaces that inspire and delight. Experience the art of living beautifully with Interiors Company pvt.</p>
                 </div>
@@ -57,21 +70,21 @@
             <center><h1>Our Services</h1></center>
             <div class="row service">
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card">
                         <img src="image/r.png" alt="" >
                         <h3>Residential Design</h3>
                         <p>Our residential design services focus on creating personalized, functional, and aesthetically pleasing homes that reflect your unique style and enhance your daily living experience.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card"  data-aos="fade-up" data-aos-duration="3000">
+                    <div class="card">
                         <img src="image/c.jpg" alt="">
                         <h3>Commercial Design</h3>
                         <p>Our commercial design services deliver innovative and efficient spaces that enhance productivity and customer engagement, tailored to the specific needs of your business.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="card">
                         <img src="image/s.jpeg" alt="" >
                         <h3>Interior Architecture</h3>
                         <p>Our interior architecture services transform spaces by integrating structural changes with aesthetic enhancements, creating cohesive and functional environments that meet modern standards.</p>
